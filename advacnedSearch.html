@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Advanced Search</title>
+    <head>
+        <style>
+            body {
+                background-color: rgb(228, 227, 227);
+            }
+            .table {
+                display: table;
+                width: 100%;
+                float: left;
+            }
+            .row {
+                display: table-row;
+
+            }
+
+            .cell {
+                display: table-cell;
+                width: 100%;
+                text-align: left;
+            }
+            div.link {
+            text-align: right;
+            } 
+            input {
+                font-family:'Product Sans';
+                background-color:#dbd2d2c4;
+                background-size: cover; 
+                border-radius: 10px;
+                margin: 10px;
+                text-align: center;
+                min-height: 10px;
+                min-width: 500px;
+            
+        } 
+        .inputButton {
+                font-family:'Product Sans';
+                background-color:#dbd2d2c4;
+                background-size: cover; 
+                border-radius: 10px;
+                margin: 10px;
+                text-align: center;
+                min-height: 10px;
+                min-width: 100px;
+            
+        } 
+            p {
+                font-size: 20px;
+                font-family:'Product Sans';
+        }
+        a:link {
+            text-decoration: none;
+            color:black;
+        }
+        a:hover{
+            color: rgba(255, 0, 0, 0.623);
+        }
+        div.link {
+        text-align: right;
+        } 
+        </style>
+    </head>
+    <body>
+        <h2 style="color:rgb(236, 58, 58);">Advanced Search</h2>
+        <div class="link">
+            <a href="./GoogleSearch.html">Go back to Google Search</a>
+        </div>
+
+        <form action="https://www.google.com/search">
+            <div class="table">
+                        
+                <div class="row">
+                    <div class="cell">
+                        <p>All of these words:</p>
+                    </div>
+                    <div class="cell">
+                        <input type="text" name="as_q">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell">
+                        <p>This exact word or phrase:</p>
+                    </div>
+                    <div class="cell">
+                        <input type="text" name="as_epq">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell">
+                        <p>Any of these words:</p>
+                    </div>
+                    <div class="cell">
+                        <input type="text" name="as_eq">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell">
+                        <p>None of these words:</p>
+                    </div>
+                    <div class="cell">
+                        <input type="text" name="as_nlo">
+                    </div>
+                </div>
+                
+                <input type="hidden" name="as_qdr" value="all">
+                <input type="hidden" name="as_occt" value="any">
+                <input type="hidden" name="safe" value="images">
+                
+                <div class="cell">
+                    <div class="cell">
+                        <input class="inputButton" type="submit" value="Advanced search">
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </body>
+</html>
